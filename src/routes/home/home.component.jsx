@@ -1,4 +1,4 @@
-import Directory from '../../components/directory/directory.component'
+import Directory from '../../components/directory/directory.component';
 
 function Home() {
   const categories = [
@@ -27,9 +27,9 @@ function Home() {
       title: 'MENS',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
     },
-  ]
+  ];
 
-  return <Directory categories={categories} />
+  return <Directory categories={categories} />;
 }
 
-export default Home
+export default Home;

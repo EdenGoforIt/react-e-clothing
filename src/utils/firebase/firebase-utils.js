@@ -1,10 +1,10 @@
-import { initializeApp } from 'firebase/app'
+import { initializeApp } from 'firebase/app';
 import {
   getAuth,
   signInWithRedirect,
   signInWithPopup,
   GoogleAuthProvider,
-} from 'firebase/auth'
+} from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -14,16 +14,16 @@ const firebaseConfig = {
   storageBucket: 'crown-clothing-db-d434d.appspot.com',
   messagingSenderId: '9990233827',
   appId: '1:9990233827:web:81e222873bcbf6e126efd6',
-}
+};
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig)
+const firebaseApp = initializeApp(firebaseConfig);
 
-const provider = new GoogleAuthProvider()
+const provider = new GoogleAuthProvider();
 
 provider.setCustomParameters({
   prompt: 'select_account',
-})
+});
 
-export const auth = getAuth()
-export const SignInWithGooglePopup = () => signInWithPopup(auth, provider)
+export const auth = getAuth();
+export const SignInWithGooglePopup = () => signInWithPopup(auth, provider);

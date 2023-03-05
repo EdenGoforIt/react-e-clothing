@@ -1,7 +1,7 @@
-import { Link, Outlet } from 'react-router-dom'
-import './navigation.styles.scss'
+import { Link, Outlet } from 'react-router-dom';
+import './navigation.styles.scss';
 // you can make the image as react component
-import { ReactComponent as CrownLogo } from '../../assets/crown.svg'
+import { ReactComponent as CrownLogo } from '../../assets/crown.svg';
 
 const Navigation = () => {
   return (
@@ -23,7 +23,7 @@ const Navigation = () => {
       </div>
       <Outlet />
     </>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
